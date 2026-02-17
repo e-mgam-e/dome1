@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class PostsViewController {
 
-    @Autowired // Помечаем, чтобы Spring сам нашел и подставил сервис
+    @Autowired
     private PostService postsService;
 
     @RequestMapping(path = "/", method = RequestMethod.GET)
